@@ -27,7 +27,7 @@ function share(){
 
 function disqus(){
     /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'songzuotao';
+    var disqus_shortname = 'songzuotao.github.io/blog';
 
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
