@@ -8,4 +8,4 @@ categories: common
 <div class="toc"></div>
 
 <br/>
-Now，新的开始。
+biu biu biu...
