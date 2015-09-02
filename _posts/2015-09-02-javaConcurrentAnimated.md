@@ -10,4 +10,4 @@ categories: 并发编程
 <br/>
 收藏一款java并发的工具
 
-> [Blockquote](http://sourceforge.net/projects/javaconcurrenta/)
+> [javaConcurrentAnimated](http://sourceforge.net/projects/javaconcurrenta/)
