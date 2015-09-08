@@ -1,7 +1,7 @@
 ---
 layout: post
-title: javaConcurrentAnimated
-tags: java,httpclient
+title: Jetty httpclient和Apache httpclient使用总结
+tags: jetty apache httpclient 
 categories: Java
 ---
 
