@@ -8,8 +8,7 @@ categories: Java
 <div class="toc"></div>
 
 <br/>
-<br/>
-调用Restful接口的方式一般是使用httpclient实现的，而httpclient有两个版本，Jetty和Apache，下面逐个分析一下：
+调用Restful接口的方式一般是使用httpclient实现的，而httpclient有两个版本，Jetty和Apache，以http方式访问服务的实现，很容易google到，在这里具体的讨论下以https访问服务的实现方式，下面逐个分析：
 
 Apache：
 -------
@@ -48,6 +47,8 @@ Apache：
     }
  <br>   
 **Apache HttpClient 信任指定证书：**
+
+通常证书文件指的是keystore和truststore，keystore一般存放的是私钥，用来加解密或者进行签名，truststore中保存的是一些可信任的证书。具体如何生成这两个证书文件，这里先不做介绍。
 
     private static SSLContext getCert()
     {
@@ -102,3 +103,4 @@ Apache：
     }
 <br>
 有关Jetty HttpClient的实现，下一篇记录。
+
