@@ -8,7 +8,7 @@ categories: Java
 <div class="toc"></div>
 
 <br/>
-这一片介绍一下Jetty Httpclient的有关实现，Jetty Httpclient相比Apache来说更轻量。
+这一篇介绍一下Jetty Httpclient的有关实现，Jetty Httpclient相比Apache来说更轻量。
 
 Jetty：
 -------
