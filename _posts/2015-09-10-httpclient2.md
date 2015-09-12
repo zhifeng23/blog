@@ -50,6 +50,21 @@ Jetty：
 
 通常证书文件指的是keystore和truststore，keystore一般存放的是私钥，用来加解密或者进行签名，truststore中保存的是一些可信任的证书。具体如何生成这两个证书文件，这里先不做介绍。
 
+    private static HttpClient getHttpClient()
+	{
+		// 下面是重点
+		SslContextFactory sslctx = new SslContextFactory();
+		sslctx.setSslContext(getCert());
+		Sting props = "TLSv1.2,TLSv1.1,TLSv1,SSLv2Hello";
+		String cips = "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256,TLS_DHE_DSS_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_DHE_RSA_WITH_AES_128_CBC_SHA,TLS_DHE_DSS_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA";
+		sslctx.setIncludeProtocols(pros.split(","));
+		sslctx.setIncludeCipherSuites(cips.split(","));	
+		sslctx.setAllowRenegotiate(false);
+		sslctx.setNeedClientAuth(false);
+
+		return new HttpClient(sslctx);
+	}
+
     private static SSLContext getCert()
     {
         String keyStore = DefaultEnvUtil.getAppRoot() + File.separator
@@ -90,16 +105,6 @@ Jetty：
             logger.error("HttpsClient::getCert get error.", e);
         }
         return sslContext;
-    }
-	private static HttpClient getHttpClient()
-    {
-        // 下面是重点
-        SSLSocketFactory socketFactory = new SSLSocketFactory(getCert());
-        socketFactory.setHostnameVerifier(new AllowAllHostnameVerifier());
-
-        HttpClient httpclient = new DefaultHttpClient();
-        httpclient.getConnectionManager().getSchemeRegistry().register(new Scheme("https", 443, socketFactory));
-        return httpclient;
     }
 
 <br>
