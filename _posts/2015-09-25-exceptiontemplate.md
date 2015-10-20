@@ -224,3 +224,5 @@ public class InputStreamProcessingTemplate {
 异常处理模板是一个可以提高代码的质量和可读性的简单而强大的机制。这也增加了你的工作效率，可以减少代码量，并使代码更加的整洁。
 
 模板方法的设计方案可以用于其他目的，而不仅仅是异常处理。输入流的迭代也可以放在一个模板里。在JDBC的ResultSet的迭代也可以放在一个模板里。正确执行JDBC事务，可以放入一个模板。像这样的处理流程还有很多。
+
+本文译自：[Exception Handling Templates in Java](http://tutorials.jenkov.com/java-exception-handling/exception-handling-templates.html)
