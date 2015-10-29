@@ -116,10 +116,10 @@ RuntimeExceptions从try块抛出但没有捕获，如果input.close（）调用�
 你可以通过实现InputStreamProcessor接口而不是继承InputStreamProcessingTempate的方式。下面来看一下如何实现的：
 
     
-public interface InputStreamProcessor {
-    public void process(InputStream input) throws IOException;
-}
-public class InputStreamProcessingTemplate {
+    public interface InputStreamProcessor {
+        public void process(InputStream input) throws IOException;
+    }
+    public class InputStreamProcessingTemplate {
 
     public void process(String fileName, InputStreamProcessor processor)     {
         IOException processException = null;
