@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JDK工具javap的使用
-tags: nothing
+tags: java javap
 categories: Java
 ---
 
@@ -9,9 +9,11 @@ categories: Java
 
 <br/>
 javap是JDK自带的反汇编器，可以查看java编译器为我们生成的字节码。通过它，可以对照源代码和字节码，从而了解很多编译器内部的工作。
-windows环境下查看javap自带工具选项：  
+windows环境下查看javap自带工具选项：
+  
 ![](http://i.imgur.com/jex8Ghb.png)
 
+<br/>
 平常工作中 -c 反汇编比较常用，下面写个简单的例子看一下
 
 	public class Synchronized {
