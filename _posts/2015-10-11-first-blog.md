@@ -13,7 +13,7 @@ windows环境下查看javap自带工具选项：
   
 ![](http://i.imgur.com/jex8Ghb.png)
 
-<br/>
+----------
 平常工作中 -c 反汇编比较常用，下面写个简单的例子看一下
 
 	public class Synchronized {
@@ -30,7 +30,7 @@ windows环境下查看javap自带工具选项：
 	    }
 	}
 
-<br/>
+----------
 执行 javap Synchronized
     
 	Compiled from "Synchronized.java"
@@ -41,6 +41,8 @@ windows环境下查看javap自带工具选项：
 	}
 
 由此可以看出如果没有构造函数，编译器会默认生成一个。
+
+----------
 
 执行 javap -c Synchronized  对代码进行反汇编
 
@@ -77,8 +79,9 @@ windows环境下查看javap自带工具选项：
 	    Code:
 	       0: return
 
-这里显示的是编译器执行具体的字节码，可以看到Synchronized类中对于同步块的实现使用了monitorenter和monitorexit指令。  
-<br/>
+这里显示的是编译器执行具体的字节码，可以看到Synchronized类中对于同步块的实现使用了monitorenter和monitorexit指令。
+  
+----------
 执行javap -v Synchronized 输出附加信息
   
 	 public static void main(java.lang.String[]);
