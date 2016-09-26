@@ -32,6 +32,12 @@ email: "songzuotao@gmail.com"
 description: "Coder"
 github_username:  "songzuotao"
 
+duoshuo_shortname: #hygblog
+disqus_shortname: songzuotao
+
+baidu_tongji_id: 9e67f7ae84149facbc0065fb1e10f60e
+google_analytics_id: UA-72449510-4 # google 分析追踪id
+
 url: "http://songzuotao.github.io/blog"
 imgrepo: "http://songzuotao.github.io/blog/static/img"
 #url: "http://127.0.0.1:4000"
