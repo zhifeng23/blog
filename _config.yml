@@ -29,13 +29,13 @@ description_footer: 本站记录我前端之旅的沿途风景！
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
 duoshuo_shortname: #hygblog
-disqus_shortname: gaohaoyang
+disqus_shortname: songzuotao
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
-baidu_tongji_id: cf8506e0ef223e57ff6239944e5d46a4
+baidu_tongji_id: 9e67f7ae84149facbc0065fb1e10f60e
 google_analytics_id: UA-72449510-4 # google 分析追踪id
 
 # Build settings
