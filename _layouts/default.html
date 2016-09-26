@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-{% include head.html %}
+  {% include head.html %}
 
-<body>
-<div class="main">
+  <body>
 
-{% include header.html %}
+    {% include header.html %}
 
-    <div class="container">
         {{ content }}
-    </div>
 
-    <div class="page-scrollTop" data-toggle="tooltip" data-placement="top" title="Top">
-        <a href="javascript:void(0);">
-            <div class="arrow"></div>
-            <div class="stick"></div>
-        </a>
-    </div>
-</div>
+    {% include footer.html %}
+    {% include backToTop.html %}
+    <script src="{{ " /js/main.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+    <script src="{{ " /js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+  </body>
 
-{% include footer.html %}
-
-{% include script.html %}
-
-</body>
 </html>
